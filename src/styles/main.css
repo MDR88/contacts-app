@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.main-div {
+    display: block;
+    flex-direction: column;
+    align-content: center;
+}
