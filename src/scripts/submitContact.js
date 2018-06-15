@@ -8,10 +8,10 @@ const submitContact = () => {
     const phoneNumberField = document.getElementById("phoneNumber").value
     let counterVar = getStorage().length
     const tempObj = {
-        name: fullName,
-        address: `${addressField}`,
-        phone: `${phoneNumberField}`,
-        id: counterVar++
+        Name: fullName,
+        Address: `${addressField}`,
+        Phone: `${phoneNumberField}`,
+        UUID: counterVar++
         }
         return tempObj
     }
