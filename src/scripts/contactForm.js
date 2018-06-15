@@ -1,8 +1,6 @@
 const buildContactInputSection = () => {
-    const firstNameInputField = document.createElement("input")
-    firstNameInputField.id = "firstName"
-    const lastNameInputField = document.createElement("input")
-    lastNameInputField.id = "lastName"
+    const nameInputField = document.createElement("input")
+    firstNameInputField.id = "Name"
     const addressInputField = document.createElement("input")
     addressInputField.id = "address"
     const phoneNumberInputField = document.createElement("input")
@@ -13,8 +11,7 @@ const buildContactInputSection = () => {
     submitButton.innerHTML = "Submit Form"
     const mainFragment = document.createDocumentFragment()
 
-   mainFragment.appendChild(firstNameInputField)
-   mainFragment.appendChild(lastNameInputField)
+   mainFragment.appendChild(nameInputField)
    mainFragment.appendChild(addressInputField)
    mainFragment.appendChild(phoneNumberInputField)
    mainFragment.appendChild(submitButton)
