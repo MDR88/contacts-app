@@ -6,8 +6,9 @@ const getDatabase = () => {
         return contactsDB
     }
     else {
-        JSON.parse(contactsDB)
-        return contactsDB
+        let existingDB = localStorage.getItem("contactsDB")
+        existingDB = JSON.parse(existingDB)
+        return existingDB
     }
 }
 

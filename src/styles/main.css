@@ -4,7 +4,13 @@
 }
 
 .main-div {
-    display: block;
+    display: inline-block;
     flex-direction: column;
     align-content: center;
+}
+
+.inputField {
+    margin: 30px;
+    height: 15px;
+    width: 100px;
 }

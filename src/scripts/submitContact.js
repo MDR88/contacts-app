@@ -1,15 +1,17 @@
+const getStorage = require("./queryStorage")
 
 const submitContact = () => {
-    const firstName = document.getElementById("firstName").value
-    const lastName = document.getElementById("lastName").value
+    const fullName = document.getElementById("name").value
     const addressField = document.getElementById("address").value
     const phoneNumberField = document.getElementById("phoneNumber").value
+    let counterVar = getStorage().length
     const tempObj = {
-        name: `${firstName} ${lastName}`,
-        address: `${address}`,
-        phone: `${phoneNumberField}`
+        name: fullName,
+        address: `${addressField}`,
+        phone: `${phoneNumberField}`,
+        id: counterVar++
         }
-    return tempObj
+        return tempObj
     }
 
 module.exports = submitContact
