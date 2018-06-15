@@ -1,4 +1,6 @@
 const getStorage = require("./queryStorage")
+const listContacts = require("./listContacts")
+const clearList = require("./clearContactsList")
 
 const submitContact = () => {
     const fullName = document.getElementById("name").value
@@ -13,6 +15,5 @@ const submitContact = () => {
         }
         return tempObj
     }
-
 module.exports = submitContact
 

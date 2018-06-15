@@ -3,10 +3,33 @@
     margin: 0;
 }
 
+body {
+    font-size: 20px;
+}
 .main-div {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+}
+
+#contact-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+#contact-list ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+#contact-list ul {
+    border: 2px solid black;
+    box-shadow: 4px 6px 4px black;
+    padding: 20px;
+    margin: 30px;
 }
 
 .inputField {
@@ -14,3 +37,12 @@
     height: 15px;
     width: 100px;
 }
+
+h1 {
+    font-size: 3.5em;
+    align-self: center;
+}
+h2 {
+    font-size: 3em;
+}
+
